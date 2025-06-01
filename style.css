@@ -1,69 +1,74 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #fff9f5;
   margin: 0;
   padding: 0;
-  background: #fefefe;
   color: #333;
 }
 
 .navbar {
-  background-color: #ffb6c1;
-  padding: 1rem;
+  background-color: #f8caca;
+  padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1em;
 }
 
 .navbar a {
-  color: white;
   text-decoration: none;
+  color: #333;
+}
+
+.navbar a.active {
   font-weight: bold;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-}
-
-.hero {
-  text-align: center;
-  padding: 3rem 1rem;
-  background-color: #fff0f5;
-}
-
-.features {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.feature {
-  background-color: #ffe4e1;
-  padding: 1.5rem;
-  border-radius: 1rem;
+  color: #e63946;
 }
 
 .content {
-  padding: 2rem;
+  padding: 2em;
 }
 
-.lesson ul {
-  list-style: none;
-  padding-left: 1rem;
+.game-section {
+  margin-bottom: 2em;
+  padding: 1.5em;
+  background-color: #fff;
+  border: 2px dashed #ffd6d6;
+  border-radius: 10px;
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.options button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #fcd5ce;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.options button:hover {
+  background-color: #f8b5b5;
 }
 
 footer {
-  background-color: #ffb6c1;
-  color: white;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  padding: 1em;
+  background-color: #f8caca;
+  margin-top: 2em;
 }
