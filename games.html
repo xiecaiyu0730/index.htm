@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>遊戲區 - 輕鬆學華語</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">輕鬆學華語</div>
+    <ul>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="courses.html">課程區</a></li>
+      <li><a href="games.html">遊戲區</a></li>
+      <li><a href="about.html">關於我們</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <h1>🎮 小遊戲</h1>
+
+    <section>
+      <h2>1. 選擇題</h2>
+      <p>「你好」的英文是什麼？</p>
+      <button onclick=\"alert('正確！')\">Hello</button>
+      <button onclick=\"alert('再試一次')\">Thank you</button>
+    </section>
+
+    <section>
+      <h2>2. 聲音拼圖</h2>
+      <button onclick=\"speak('老師')\">🔊 播放</button>
+      <p>請選出對應的文字：</p>
+      <button onclick=\"alert('答對了')\">老師</button>
+      <button onclick=\"alert('答錯囉')\">學生</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 輕鬆學華語 | All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function speak(text) {
+      const synth = window.speechSynthesis;
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.lang = 'zh-TW';
+      synth.speak(utter);
+    }
+  </script>
+</body>
+</html>

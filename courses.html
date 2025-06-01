@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>課程區 - 輕鬆學華語</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">輕鬆學華語</div>
+    <ul>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="courses.html">課程區</a></li>
+      <li><a href="games.html">遊戲區</a></li>
+      <li><a href="about.html">關於我們</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <h1>📘 主題式課程</h1>
+    <section class="lesson">
+      <h2>日常生活</h2>
+      <ul>
+        <li>你好 (nǐ hǎo) <button onclick="speak('你好')">🔊</button></li>
+        <li>謝謝 (xiè xie) <button onclick="speak('謝謝')">🔊</button></li>
+      </ul>
+    </section>
+    <section class="lesson">
+      <h2>學校用語</h2>
+      <ul>
+        <li>老師 (lǎo shī) <button onclick="speak('老師')">🔊</button></li>
+        <li>學生 (xué shēng) <button onclick="speak('學生')">🔊</button></li>
+      </ul>
+    </section>
+    <section class="lesson">
+      <h2>食物文化</h2>
+      <ul>
+        <li>餃子 (jiǎo zi) <button onclick="speak('餃子')">🔊</button></li>
+        <li>珍珠奶茶 (zhēn zhū nǎi chá) <button onclick="speak('珍珠奶茶')">🔊</button></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 輕鬆學華語 | All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function speak(text) {
+      const synth = window.speechSynthesis;
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.lang = 'zh-TW';
+      synth.speak(utter);
+    }
+  </script>
+</body>
+</html>
